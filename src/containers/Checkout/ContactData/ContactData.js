@@ -1,18 +1,12 @@
 import React, { Component } from 'react';
-import {connect} from 'react-redux';
-
+import { connect } from 'react-redux';
 import withErrorHandler from '../../../hoc/withErrorHandler/withErrorHandler';
-
 import Button from '../../../components/UI/Button/Button';
 import Spinner from '../../../components/UI/Spinner/Spinner';
 import Input from '../../../components/UI/Input/Input';
-
 import axios from '../../../axios-orders';
-
 import {updateObject, checkValidity} from '../../../shared/utility';
-
 import * as actions from '../../../store/actions';
-
 import classes from './ContactData.css';
 
 class ContactData extends Component {

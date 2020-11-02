@@ -1,16 +1,10 @@
 import React, { Component } from 'react';
 import { Route, Switch, withRouter, Redirect } from 'react-router-dom';
-import {connect} from 'react-redux';
-
+import { connect } from 'react-redux';
 import * as actions from './store/actions';
-
-// Components
 import Layout from './hoc/Layout/Layout';
-
-// Containers
 import BurgerBuilder from './containers/BurgerBuilder/BurgerBuilder';
 import Logout from './containers/Auth/Logout/Logout';
-
 import asyncComponent from './hoc/asyncComponent/asyncComponent';
 
 const asyncCheckout = asyncComponent(() => {
@@ -73,7 +67,5 @@ const mapDispatchToProps = dispatch => {
     onTryAutoSignup: () => dispatch(actions.authCheckState())
   };
 };
-
-
 
 export default withRouter(connect(mapStateToProps, mapDispatchToProps)(App));

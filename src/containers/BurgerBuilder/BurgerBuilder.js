@@ -1,5 +1,4 @@
 import React, {Component, Fragment} from 'react';
-
 import Burger from '../../components/Burger/Burger';
 import BuildControls from '../../components/Burger/BuildControls/BuildControls';
 import OrderSummary from '../../components/Burger/OrderSummary/OrderSummary';
@@ -9,10 +8,6 @@ import withErrorHandler from '../../hoc/withErrorHandler/withErrorHandler';
 import {connect} from 'react-redux';
 import axios from '../../axios-orders';
 import * as actions from '../../store/actions';
-
-
-
-
 
 class BurgerBuilder extends Component {
 
@@ -114,6 +109,5 @@ const mapDispatchToProps = dispatch => {
     onSetAuthRedirectPath: (path) => dispatch(actions.setAuthRedirectPath(path))
   };
 }
-
 
 export default connect(mapStateToProps, mapDispatchToProps)(withErrorHandler(BurgerBuilder, axios));

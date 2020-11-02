@@ -1,17 +1,12 @@
 import React, {Component, Fragment} from 'react';
-
 import classes from './Modal.css';
-
 import Backdrop from '../Backdrop/Backdrop';
-
-
 
 class Modal extends Component {
 
-  shouldComponentUpdate(nextProps, nextState) {
+  shouldComponentUpdate(nextProps) {
     return nextProps.show !== this.props.show || nextProps.children !== this.props.children;
   }
-
 
   render() {
     return (
@@ -27,7 +22,6 @@ class Modal extends Component {
       </Fragment>
     );
   }
-
 }
 
 export default Modal ;

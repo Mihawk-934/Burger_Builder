@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
-import {connect} from 'react-redux';
-
+import { connect } from 'react-redux';
 import Order from '../../components/Order/Order';
 import Spinner from '../../components/UI/Spinner/Spinner';
 import axios from '../../axios-orders';
@@ -28,7 +27,6 @@ class Orders extends Component {
     return orders;
   }
 }
-
 
 const mapStateToProps = state => {
   return {
