@@ -7,6 +7,7 @@ L'utilisateur peut créer son propre compte, se connecter et vérifier ses comma
 ![Imgur](https://imgur.com/XRRvBqc.jpg)
 ## Technologies utilisées
 
+- React
 - HTML5
 - CSS3
 - Javascript
